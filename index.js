@@ -1,0 +1,23 @@
+const express = require('express');
+const mongoose = require('mongoose');
+
+const app = express();
+
+const PORT = process.env.PORT || 3000;
+const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/testdb';
+
+mongoose.connect(MONGO_URL)
+.then(() => console.log('MongoDB connected!'))
+.catch(err => console.error('MongoDB connection error: ', err));
+
+app.get('/', (request, response) => {
+    response.json(
+        {
+            "message": "Express and Mongo Server is running!!"
+        }
+    )
+});
+
+app.listen(PORT, ()=> {
+    console.log(`Server is running on port ${PORT}`);
+});

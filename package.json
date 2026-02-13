@@ -1,0 +1,25 @@
+{
+  "name": "jun25-intro-to-docker",
+  "version": "1.0.0",
+  "description": "Containerising a simple backend application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/APaud3l/jun25-intro-to-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/APaud3l/jun25-intro-to-docker/issues"
+  },
+  "homepage": "https://github.com/APaud3l/jun25-intro-to-docker#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.2.1"
+  }
+}
