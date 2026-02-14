@@ -6,7 +6,7 @@ services:
     environment:
       MONGO_URL: mongodb://mongo:27017/testdb
     depends_on:
-      - mongo
+      - mongo:latest
 
   mongo:
     image: mongo
