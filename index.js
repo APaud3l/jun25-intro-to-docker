@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/testdb';
 
 mongoose.connect(MONGO_URL)
-.then(() => console.log('MongoDB connected!'))
+.then(() => console.log('MongoDB connected successfully!'))
 .catch(err => console.error('MongoDB connection error: ', err));
 
 app.get('/', (request, response) => {
